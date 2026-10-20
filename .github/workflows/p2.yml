@@ -2,7 +2,7 @@ name: p2-환경변수
 on:
   push:
     paths:
-      - github/worflows/p2.yml
+      - .github/workflows/p2.yml
   workflow_dispatch:
 env:
   STAGE: workflow
@@ -19,7 +19,7 @@ jobs:
     steps:
       - name: 잡 층까지 있음
         run: echo "STAGE=$STAGE"
-      - name: 스탭 층까지 있음
+      - name: 스텝 층까지 있음
         env:
           STAGE: step
         run: echo "STAGE=$STAGE"
